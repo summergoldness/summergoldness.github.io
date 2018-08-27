@@ -10,16 +10,18 @@
   <meta name="description" content="weblogic SSRF漏洞利用WebLogic SSRF漏洞简介漏洞编号：CVE-2014-4210漏洞影响：版本10.0.2,10.3.6漏洞产生的原因：Weblogic中存在一个SSRF漏洞，利用该漏洞可以发送任意HTTP请求，进而攻击内网中redis、fastcgi等脆弱组件。复现借鉴文档：Weblogic SSRF漏洞 @VulhubOracle WebLogic Web Serv">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/2018/08/27/SSRF漏洞利用/index.html">
+<meta property="og:url" content="summergoldness.coding.me/Weblogic-SSRF/2018/08/27/SSRF漏洞利用/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="weblogic SSRF漏洞利用WebLogic SSRF漏洞简介漏洞编号：CVE-2014-4210漏洞影响：版本10.0.2,10.3.6漏洞产生的原因：Weblogic中存在一个SSRF漏洞，利用该漏洞可以发送任意HTTP请求，进而攻击内网中redis、fastcgi等脆弱组件。复现借鉴文档：Weblogic SSRF漏洞 @VulhubOracle WebLogic Web Serv">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-08-27T08:20:07.115Z">
+<meta property="og:image" content="summergoldness.coding.me/Weblogic-SSRF/2018/08/27/SSRF漏洞利用/images/49ab2c2d-1ad4-4ac6-a9bc-01c968d2cb7f.jpeg">
+<meta property="og:updated_time" content="2018-08-27T10:05:10.353Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo">
 <meta name="twitter:description" content="weblogic SSRF漏洞利用WebLogic SSRF漏洞简介漏洞编号：CVE-2014-4210漏洞影响：版本10.0.2,10.3.6漏洞产生的原因：Weblogic中存在一个SSRF漏洞，利用该漏洞可以发送任意HTTP请求，进而攻击内网中redis、fastcgi等脆弱组件。复现借鉴文档：Weblogic SSRF漏洞 @VulhubOracle WebLogic Web Serv">
+<meta name="twitter:image" content="summergoldness.coding.me/Weblogic-SSRF/2018/08/27/SSRF漏洞利用/images/49ab2c2d-1ad4-4ac6-a9bc-01c968d2cb7f.jpeg">
   
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+    <link rel="alternate" href="/Weblogic-SSRF/atom.xml" title="Hexo" type="application/atom+xml">
   
   
     <link rel="icon" href="/favicon.png">
@@ -27,7 +29,7 @@
   
     <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
   
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/Weblogic-SSRF/css/style.css">
 </head>
 
 <body>
@@ -38,7 +40,7 @@
   <div id="header-outer" class="outer">
     <div id="header-title" class="inner">
       <h1 id="logo-wrap">
-        <a href="/" id="logo">Hexo</a>
+        <a href="/Weblogic-SSRF/" id="logo">Hexo</a>
       </h1>
       
     </div>
@@ -46,19 +48,19 @@
       <nav id="main-nav">
         <a id="main-nav-toggle" class="nav-icon"></a>
         
-          <a class="main-nav-link" href="/">Home</a>
+          <a class="main-nav-link" href="/Weblogic-SSRF/">Home</a>
         
-          <a class="main-nav-link" href="/archives">Archives</a>
+          <a class="main-nav-link" href="/Weblogic-SSRF/archives">Archives</a>
         
       </nav>
       <nav id="sub-nav">
         
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+          <a id="nav-rss-link" class="nav-icon" href="/Weblogic-SSRF/atom.xml" title="RSS Feed"></a>
         
         <a id="nav-search-btn" class="nav-icon" title="Search"></a>
       </nav>
       <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="summergoldness.coding.me/Weblogic-SSRF"></form>
       </div>
     </div>
   </div>
@@ -66,8 +68,8 @@
       <div class="outer">
         <section id="main"><article id="post-SSRF漏洞利用" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2018/08/27/SSRF漏洞利用/" class="article-date">
-  <time datetime="2018-08-27T08:20:07.115Z" itemprop="datePublished">2018-08-27</time>
+    <a href="/Weblogic-SSRF/2018/08/27/SSRF漏洞利用/" class="article-date">
+  <time datetime="2018-08-27T10:05:10.353Z" itemprop="datePublished">2018-08-27</time>
 </a>
     
   </div>
@@ -77,12 +79,12 @@
     <div class="article-entry" itemprop="articleBody">
       
         <hr>
-<h2 id="weblogic-SSRF漏洞利用"><a href="#weblogic-SSRF漏洞利用" class="headerlink" title=" weblogic SSRF漏洞利用"></a> weblogic SSRF漏洞利用</h2><h3 id="WebLogic-SSRF漏洞简介"><a href="#WebLogic-SSRF漏洞简介" class="headerlink" title="WebLogic SSRF漏洞简介"></a>WebLogic SSRF漏洞简介</h3><p>漏洞编号：CVE-2014-4210<br>漏洞影响：版本10.0.2,10.3.6<br>漏洞产生的原因：<br>Weblogic中存在一个SSRF漏洞，利用该漏洞可以发送任意HTTP请求，进而攻击内网中redis、fastcgi等脆弱组件。<br>复现借鉴文档：<a href="https://vulhub.org/#/environments/weblogic/ssrf/" target="_blank" rel="noopener">Weblogic SSRF漏洞 @Vulhub</a><br>Oracle WebLogic Web Server既可以被外部主机访问，同时也允许访问内部主机。可以用来进行端口扫描等。</p>
+<h2 id="weblogic-SSRF漏洞利用"><a href="#weblogic-SSRF漏洞利用" class="headerlink" title=" weblogic SSRF漏洞利用"></a> weblogic SSRF漏洞利用</h2><h3 id="WebLogic-SSRF漏洞简介"><a href="#WebLogic-SSRF漏洞简介" class="headerlink" title="WebLogic SSRF漏洞简介"></a>WebLogic SSRF漏洞简介</h3><p>漏洞编号：CVE-2014-4210<br>漏洞影响：版本10.0.2,10.3.6<br>漏洞产生的原因：<br>Weblogic中存在一个SSRF漏洞，利用该漏洞可以发送任意HTTP请求，进而攻击内网中redis、fastcgi等脆弱组件。<br>复现借鉴文档：<a href="https://vulhub.org/#/environments/weblogic/ssrf/" target="_blank" rel="noopener">Weblogic SSRF漏洞 @Vulhub</a><br>Oracle WebLogic Web Server既可以被外部主机访问，同时也允许访问内部主机。可以用来进行端口扫描等。<br><img src="images/49ab2c2d-1ad4-4ac6-a9bc-01c968d2cb7f.jpeg" alt="你想输入的替代文字"></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/08/27/SSRF漏洞利用/" data-id="cjlc0jt1n0000ahsi38y2tgzu" class="article-share-link">Share</a>
+      <a data-url="summergoldness.coding.me/Weblogic-SSRF/2018/08/27/SSRF漏洞利用/" data-id="cjlc4azsk00005qsiqh4tnl9x" class="article-share-link">Share</a>
       
       
     </footer>
@@ -92,7 +94,7 @@
 <nav id="article-nav">
   
   
-    <a href="/2018/08/27/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/Weblogic-SSRF/2018/08/27/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
       <div class="article-nav-title">Hello World</div>
     </a>
@@ -118,7 +120,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">August 2018</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/Weblogic-SSRF/archives/2018/08/">August 2018</a></li></ul>
     </div>
   </div>
 
@@ -131,11 +133,11 @@
       <ul>
         
           <li>
-            <a href="/2018/08/27/SSRF漏洞利用/">(no title)</a>
+            <a href="/Weblogic-SSRF/2018/08/27/SSRF漏洞利用/">(no title)</a>
           </li>
         
           <li>
-            <a href="/2018/08/27/hello-world/">Hello World</a>
+            <a href="/Weblogic-SSRF/2018/08/27/hello-world/">Hello World</a>
           </li>
         
       </ul>
@@ -158,9 +160,9 @@
     </div>
     <nav id="mobile-nav">
   
-    <a href="/" class="mobile-nav-link">Home</a>
+    <a href="/Weblogic-SSRF/" class="mobile-nav-link">Home</a>
   
-    <a href="/archives" class="mobile-nav-link">Archives</a>
+    <a href="/Weblogic-SSRF/archives" class="mobile-nav-link">Archives</a>
   
 </nav>
     
@@ -168,11 +170,11 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+  <link rel="stylesheet" href="/Weblogic-SSRF/fancybox/jquery.fancybox.css">
+  <script src="/Weblogic-SSRF/fancybox/jquery.fancybox.pack.js"></script>
 
 
-<script src="/js/script.js"></script>
+<script src="/Weblogic-SSRF/js/script.js"></script>
 
 
 
